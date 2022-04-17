@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2"
+     xml:base="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:PAC2p2="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2">
+        <terms:contributor xml:lang="en">Mireia Busquets</terms:contributor>
+        <rdfs:comment xml:lang="en">TV show ontology created by Mireia Busquets</rdfs:comment>
+        <rdfs:label xml:lang="en">TVShow</rdfs:label>
+        <skos:definition xml:lang="en">An ontology about TvShows and their actors</skos:definition>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:comment>an annotation for the description</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment>an annotation for the title</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <rdfs:comment xml:lang="en">an annotation for the contributor</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment>an annotation for a comment</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment>an annotation for a label</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs">
+        <rdfs:comment>an annotation to refer to another class into another repository</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:comment>an annotation for the altLabel</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:comment>an annotation for a skos:definition</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#appearsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#appearsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:comment>An object property linking Actor with Episode</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#belongTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#belongTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#countryOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#countryOrigin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <rdfs:comment>a link for the classes TvShow and Country</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#directorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#directorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:comment>An object property linking Director with Episode, the directors can be  different during the TV Show for differents Episodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <rdfs:comment>a link for classes TVShow with Award</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasDirectorAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasDirectorAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DirectorAward"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:52:07Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasEpisode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasEpisode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:comment>a link for TVShow with Episode</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+        <rdfs:comment>a link with TVshow and Genre</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasReview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Review"/>
+        <rdfs:comment>a link for Episode and Review</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSeason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <rdfs:comment>a link for TVShow and Season</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSubtitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSubtitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Subtitle"/>
+        <rdfs:comment>a link for Episode and subtitle</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasTVShowAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasTVShowAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShowAward"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:52:16Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#inLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#inLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language"/>
+        <rdfs:comment>a link for TVShow and Language</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#isSuccessfulActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#isSuccessfulActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SuccessfulActor"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T15:27:24Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#musicBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#musicBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#producerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#producerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:comment>a object property linking Producer with TV Show</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#audience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#audience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>a data property for the audience</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#awardName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#awardName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:31:59Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#countryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#countryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:31:50Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>a data properti for the duration, it could be the episode duration, the seasson duration and for the hole TV Show</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#emitDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#emitDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>a data property for the emited date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>a data property for the end date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#episodeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#episodeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:33:26Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>a data property for the name, it could be the episode&apos;s name, person&apos;s name, TvShow&apos;s name, Season&apos;s name, musicgroup name, genre....</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#numberOfEpisodes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#numberOfEpisodes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>a data property for the number of episodes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#numberOfSeason -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#numberOfSeason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>a data properti for the number of seasons</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>a data property for the start date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:30:41Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:12:00Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#appearsIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class defening actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#ActorAward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#ActorAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DirectorAward"/>
+        <rdfs:comment xml:lang="en">a entity for the tipe of award for a actors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award">
+        <rdfs:comment xml:lang="en">a definition for Award</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country">
+        <rdfs:comment>Class to define a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#directorOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Person who is also Director of a Tv Show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DirectorAward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DirectorAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <rdfs:comment>a entity for the tipe of award for a directors Tvshow</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSubtitle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Subtitle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class for Episode</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://schema.org/Episode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres">
+        <rdfs:comment>a definition for a genre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language">
+        <rdfs:comment>a class for languages</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup">
+        <rdfs:comment>a definition for the music group</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person">
+        <rdfs:comment>a definiion for a person</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Place">
+        <rdfs:comment>a definition for a location when it was recorded a episode</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#producerOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Person who is also Producer of a TV Show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Review">
+        <rdfs:comment>a definition for review</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://schema.org/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasEpisode"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>a definition for a season</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://schema.org/CreativeWorkSeason"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Subtitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Subtitle">
+        <rdfs:comment>an entity for the subtitle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SuccessfulActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SuccessfulActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasAward"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#ActorAward"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>a class for actors that are successful, STAR, that means at least had one actor  award</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SuccessfulDirector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SuccessfulDirector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Director"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasDirectorAward"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DirectorAward"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>a class for directors that are successful, STAR, that means at least had one director  award</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#countryOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasAward"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasGenre"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#hasSeason"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#inLanguage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#musicBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ontology&apos;s root class, Tv Show</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/TelevisionShow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShowAward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShowAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Award"/>
+        <rdfs:comment>a entity for the tipe of award for a tvShows</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+        <rdfs:comment>an intance for the Action Genre</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Acting_Ensemble -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Acting_Ensemble">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#ActorAward"/>
+        <PAC2p2:awardName>Best Acting Ensemble</PAC2p2:awardName>
+        <PAC2p2:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</PAC2p2:year>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:12:38Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Actor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#ActorAward"/>
+        <PAC2p2:awardName>Best Actor</PAC2p2:awardName>
+        <PAC2p2:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</PAC2p2:year>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:14:13Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Croatia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Croatia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>Croatia</PAC2p2:countryName>
+        <rdfs:comment>an instance for the country Croatia</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#D.B.Weiss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#D.B.Weiss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>D. B. Weiss</PAC2p2:name>
+        <rdfs:comment>an instance for a person D B Weiss</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DamonLindelof -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DamonLindelof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost"/>
+        <PAC2p2:name>Damon Lindelof</PAC2p2:name>
+        <rdfs:comment>an instance for a person</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DavidBenioff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#DavidBenioff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>David Benioff</PAC2p2:name>
+        <rdfs:comment>an instance for the person David Benioff</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+        <rdfs:comment>an instance for the Drama Genre</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language"/>
+        <rdfs:comment>an instance for English language</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#EvangelineLilly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#EvangelineLilly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost"/>
+        <PAC2p2:name>Evangeline Lilly</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:05:11Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Fantasy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Fantasy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+        <rdfs:comment>an instance for the fantasy genre</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#French -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#French">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language"/>
+        <rdfs:comment>an instance for french language</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <PAC2p2:countryOrigin rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedStates"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Action"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Drama"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Fantasy"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Croatia"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Iceland"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Malta"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Spain"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedKingdom"/>
+        <PAC2p2:inLanguage rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#English"/>
+        <PAC2p2:musicBy rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#RaminDjawadi"/>
+        <PAC2p2:musicBy rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SigurRos"/>
+        <PAC2p2:musicBy rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#theHoldSteady"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-19T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</PAC2p2:numberOfEpisodes>
+        <PAC2p2:numberOfSeason rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</PAC2p2:numberOfSeason>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-17T00:00:00</PAC2p2:startDate>
+        <PAC2p2:title>Game Of Thones</PAC2p2:title>
+        <rdfs:comment>an instance for a TVShow</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GeorgeR.R.Martin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GeorgeR.R.Martin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>George R. R. Martin</PAC2p2:name>
+        <rdfs:comment>an instance for the person George RR Martin</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Hawaii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Hawaii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Place"/>
+        <PAC2p2:belongTo rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedStates"/>
+        <PAC2p2:countryName>Hawaii</PAC2p2:countryName>
+        <rdfs:comment>an instance for place Hawaii an state from United states</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Henry_Ian_Cusick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Henry_Ian_Cusick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost"/>
+        <PAC2p2:name>Henry Ian Cusick</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:07:14Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#HollywoodStudioSymphonyOrchestra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#HollywoodStudioSymphonyOrchestra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+        <rdfs:comment>an instance for a music group</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Iceland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Iceland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>Iceland</PAC2p2:countryName>
+        <rdfs:comment>an instance for the country Iceland</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#J.J.Abrams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#J.J.Abrams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:directorOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E01"/>
+        <PAC2p2:directorOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E02"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost"/>
+        <PAC2p2:name>J. J. Abrams</PAC2p2:name>
+        <rdfs:comment>an instance for person</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LenaHeadey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LenaHeadey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>Lena Headey</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:03:01Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <PAC2p2:countryOrigin rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedStates"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Action"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Fantasy"/>
+        <PAC2p2:hasGenre rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Mistery"/>
+        <PAC2p2:hasLocation rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Hawaii"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason01"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason02"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason03"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason04"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason05"/>
+        <PAC2p2:hasSeason rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason06"/>
+        <PAC2p2:inLanguage rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#English"/>
+        <PAC2p2:musicBy rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#HollywoodStudioSymphonyOrchestra"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-23T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</PAC2p2:numberOfEpisodes>
+        <PAC2p2:numberOfSeason rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</PAC2p2:numberOfSeason>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-09-22T00:00:00</PAC2p2:startDate>
+        <PAC2p2:title>Lost</PAC2p2:title>
+        <rdfs:comment>an instance for a TVShow</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <PAC2p2:audience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18650000</PAC2p2:audience>
+        <PAC2p2:emitDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-09-22T00:00:00</PAC2p2:emitDate>
+        <PAC2p2:episodeName>Pilot (Part 1)</PAC2p2:episodeName>
+        <rdfs:comment>an instance for Lost Season 1 Episode 1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostS01E02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Episode"/>
+        <PAC2p2:audience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17000000</PAC2p2:audience>
+        <PAC2p2:emitDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-09-29T00:00:00</PAC2p2:emitDate>
+        <PAC2p2:episodeName>Pilot (Part 2)</PAC2p2:episodeName>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:08:31Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-05-25T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-09-22T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>an instance for the 01 lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-05-24T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-09-21T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>an instance for 02 Lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-23T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-10-04T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>an instance for &apos;03 lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-29T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-31T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>an instance for the 04 lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-13T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-21T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>a instance for the 05 lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#LostSeason06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Season"/>
+        <PAC2p2:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-23T00:00:00</PAC2p2:endDate>
+        <PAC2p2:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</PAC2p2:numberOfEpisodes>
+        <PAC2p2:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-02T00:00:00</PAC2p2:startDate>
+        <rdfs:comment>an instance for the 06 lost season</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Malta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Malta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>Malta</PAC2p2:countryName>
+        <rdfs:comment>an instance for the country Malta</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MarkAddy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MarkAddy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>Mark Addy</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:01:19Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MatthewFox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MatthewFox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Lost"/>
+        <PAC2p2:name>Matthew Fox</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:05:46Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MichelleFairley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MichelleFairley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>Michelle Fairley</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:02:25Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Mistery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Mistery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#NikolajCoster-Waldau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#NikolajCoster-Waldau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:producerOf rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:name>Nikolaj Coster-Waldau</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T14:01:53Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#OrangeIsTheNewBlack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#OrangeIsTheNewBlack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#TVShow"/>
+        <PAC2p2:title>Orange Is The New Black</PAC2p2:title>
+        <rdfs:comment>an instance for a TVShow</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#RaminDjawadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#RaminDjawadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+        <PAC2p2:name>Ramin Djawadi</PAC2p2:name>
+        <rdfs:comment>an instance for the music group</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SeanBean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SeanBean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Person"/>
+        <PAC2p2:appearsIn rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#GameOfThones"/>
+        <PAC2p2:hasAward rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Acting_Ensemble"/>
+        <PAC2p2:hasAward rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Best_Actor"/>
+        <PAC2p2:name>Sean Bean</PAC2p2:name>
+        <dc:creator>Mireia</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-17T13:57:24Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SigurRos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#SigurRos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+        <rdfs:comment>an instance for a music group</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Spain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>Spain</PAC2p2:countryName>
+        <rdfs:comment>an instance for the country spain</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Spanish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Spanish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Language"/>
+        <rdfs:comment>an instance for spanish language</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Tragedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Tragedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Genres"/>
+        <rdfs:comment>an instance for the tragedy genre</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedKingdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedKingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>United Kingdom</PAC2p2:countryName>
+        <rdfs:comment>an intance for country United Kingdom</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedStates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#UnitedStates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#Country"/>
+        <PAC2p2:countryName>United States</PAC2p2:countryName>
+        <rdfs:comment>an instance for the country United States</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#theHoldSteady -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#theHoldSteady">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mireia/ontologies/2022/3/PAC2p2#MusicGroup"/>
+        <rdfs:comment>an instance for a music group</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
